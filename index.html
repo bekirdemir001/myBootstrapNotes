@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Bootstrap Notes</title>
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+</head>
+
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="/assets/images/bootstrap_icon.png" alt="Logo" width="30" height="24"
+                    class="d-inline-block align-text-top">
+                myBootstrapNotes
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Resume/CV</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <div class="container bg-warning">
+        <h1>Welcome to my website</h1>
+    </div>
+
+    <!--Layout and Grid-->
+    <div class="container text-center" style="background-color: blue;">
+        <div class="row bg-warning align-items-end" style="height: 150px;">
+            <div class="col-sm bg-primary text-light">
+                Column 1
+            </div>
+            <div class="col-sm bg-danger text-light">
+                Column 2
+            </div>
+            <div class="col-sm bg-success text-light">
+                Column 3
+            </div>
+        </div>
+    </div>
+
+    <div class="container " style="background-color: blue;">
+        <div class="row bg-warning text-center justify-content-between align-items-center" style="height: 150px;">
+            <div class="col-2 bg-primary text-light">
+                Column 1
+            </div>
+            <div class="col-2 bg-danger text-light">
+                Column 2
+            </div>
+            <div class="col-2 bg-success text-light">
+                Column 3
+            </div>
+        </div>
+    </div>
+
+    <!--Padding and Margin-->
+    <div class="container">
+        <div class="bg-primary pl-3">Div 1</div>
+        <div class="bg-secondary mx-3">Div 2</div>
+        <div class="bg-success pb-2">Div 3</div>
+        <div class="bg-info m-3">Div 4</div>
+        <div class="bg-danger mt-4">Div 5</div>
+    </div>
+
+    <!-- Alerts-->
+    <div class="alert alert-primary" role="alert">
+        A simple primary alert—check it out!
+    </div>
+    <div class="alert alert-secondary" role="alert">
+        A simple secondary alert—check it out!
+    </div>
+    <div class="alert alert-success" role="alert">
+        A simple success alert—check it out!
+    </div>
+    <div class="alert alert-danger" role="alert">
+        A simple danger alert—check it out!
+    </div>
+    <div class="alert alert-warning" role="alert">
+        A simple warning alert—check it out!
+    </div>
+    <div class="alert alert-info" role="alert">
+        A simple info alert—check it out!
+    </div>
+    <div class="alert alert-light" role="alert">
+        A simple light alert—check it out!
+    </div>
+    <div class="alert alert-dark" role="alert">
+        A simple dark alert—check it out!
+    </div>
+
+    <!--Text and Backround-->
+    <p class="text-start text-lowercase fs-1 fw-bold font-monospace p-3 mb-2 bg-primary text-white">Start aligned text
+        on all viewport sizes.</p>
+    <p class="text-center text-uppercase fs-2 fw-normal font-monospace p-3 mb-2 bg-success text-white">Center aligned
+        text on all viewport sizes.</p>
+    <p class="text-end text-capitalize fs-3 fst-italic font-monospace p-3 mb-2 bg-warning text-dark">End aligned text on
+        all viewport sizes.</p>
+
+    <!--Buttons-->
+    <button type="button" class="btn btn-primary btn-lg">Primary</button>
+    <button type="button" class="btn btn-secondary">Secondary</button>
+    <button type="button" class="btn btn-success btn-sm">Success</button>
+    <button type="button" class="btn btn-danger disabled">Danger</button>
+    <button type="button" class="btn btn-warning">Warning</button>
+    <button type="button" class="btn btn-info">Info</button>
+    <button type="button" class="btn btn-light">Light</button>
+    <button type="button" class="btn btn-dark">Dark</button>
+
+    <br>
+
+    <button type="button" class="btn btn-outline-primary btn-lg">Primary</button>
+    <button type="button" class="btn btn-outline-secondary">Secondary</button>
+    <button type="button" class="btn btn-outline-success btn-sm">Success</button>
+    <button type="button" class="btn btn-outline-danger disabled">Danger</button>
+    <button type="button" class="btn btn-outline-warning">Warning</button>
+    <button type="button" class="btn btn-outline-info">Info</button>
+    <button type="button" class="btn btn-outline-light">Light</button>
+    <button type="button" class="btn btn-outline-dark">Dark</button>
+
+    <!--Cards-->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-4 col-lg-4">
+                <div class="card">
+                    <img src="/assets/images/DeutscherFussball-Bund.png" class="card-img-top" alt="DFB Image Not Found">
+                    <div class="card-body">
+                        <h5 class="card-title">Germany</h5>
+                        <p class="card-text">Germany is one of the most successful national teams in international
+                            competitions, having won four FIFA World Cups (1954, 1974, 1990, 2014), tied with Italy, and
+                            only one less than the most successful team, Brazil. </p>
+                        <a href="#" class="btn btn-primary">Click for extra information</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4">
+                <div class="card">
+                    <img src="/assets/images/DeutscherFussball-Bund.png" class="card-img-top" alt="DFB Image Not Found">
+                    <div class="card-body">
+                        <h5 class="card-title">Germany</h5>
+                        <p class="card-text">Germany is one of the most successful national teams in international
+                            competitions, having won four FIFA World Cups (1954, 1974, 1990, 2014), tied with Italy, and
+                            only one less than the most successful team, Brazil. </p>
+                        <a href="#" class="btn btn-primary">Click for extra information</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4">
+                <div class="card">
+                    <img src="/assets/images/DeutscherFussball-Bund.png" class="card-img-top" alt="DFB Image Not Found">
+                    <div class="card-body">
+                        <h5 class="card-title">Germany</h5>
+                        <p class="card-text">Germany is one of the most successful national teams in international
+                            competitions, having won four FIFA World Cups (1954, 1974, 1990, 2014), tied with Italy, and
+                            only one less than the most successful team, Brazil. </p>
+                        <a href="#" class="btn btn-primary">Click for extra information</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Tables and Lists-->
+    <div class="container">
+        <div class="table-responsive-sm">
+            <table class="table mt-4 table-striped table-hover table-dark table-bordered border-primary">
+                <caption>List of users: ...</caption>
+                <thead>
+                    <tr class="table-primary">
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Handle</th>
+                    </tr>
+                </thead>
+                <tbody class="table-group-divider">
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td colspan="2">Larry the Bird</td>
+                        <td>@twitter</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="container">
+        <ul class="list-group">
+            <li class="list-group-item active">An item</li>
+            <li class="list-group-item list-group-item-success">A second item</li>
+            <li class="list-group-item">A third item</li>
+            <li class="list-group-item">A fourth item</li>
+            <li class="list-group-item disabled">And a fifth one</li>
+        </ul>
+    </div>
+    <div class="container">
+        <ul class="list-group mt-4">
+            <li class="list-group-item d-flex justify-content-between align-items-center list-group-item-dark">
+                A list item
+                <span class="badge text-bg-primary rounded-pill">14</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center list-group-item-dark">
+                A second list item
+                <span class="badge text-bg-primary rounded-pill">2</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center list-group-item-dark">
+                A third list item
+                <span class="badge text-bg-primary rounded-pill">1</span>
+            </li>
+        </ul>
+    </div>
+
+    <!--Form-->
+    <div class="container my-4 bg-info">
+        <h5 class="text-center mb-3">Registration Form</h5>
+        <form class="row g-3">
+            <div class="col-md-6">
+                <label for="inputEmail4" class="form-label">Email</label>
+                <input type="email" class="form-control" id="inputEmail4">
+            </div>
+            <div class="col-md-6">
+                <label for="inputPassword4" class="form-label">Password</label>
+                <input type="password" class="form-control" id="inputPassword4">
+            </div>
+            <div class="col-12">
+                <label for="inputAddress" class="form-label">Address</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+            </div>
+            <div class="col-12">
+                <label for="inputAddress2" class="form-label">Address 2</label>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+            </div>
+            <div class="col-md-6">
+                <label for="inputCity" class="form-label">City</label>
+                <input type="text" class="form-control" id="inputCity">
+            </div>
+            <div class="col-md-4">
+                <label for="inputState" class="form-label">State</label>
+                <select id="inputState" class="form-select">
+                    <option selected>Choose...</option>
+                    <option>...</option>
+                </select>
+            </div>
+            <div class="col-md-2">
+                <label for="inputZip" class="form-label">Zip</label>
+                <input type="text" class="form-control" id="inputZip">
+            </div>
+            <div class="col-12">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                        Check me out
+                    </label>
+                </div>
+            </div>
+            <div class="d-grid gap-2">
+                <button class="btn btn-primary" type="submit">Send</button>
+                <button class="btn btn-secondary" type="reset">Clear</button>
+            </div>
+        </form>
+    </div>
+
+    <!--Sliders-->
+    <div class="container">
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/assets/images/slider1.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>First slide label</h5>
+                        <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/assets/images/slider2.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Second slide label</h5>
+                        <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/assets/images/slider3.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Third slide label</h5>
+                        <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <script src="/assets/js/bootstrap.min.js"></script>
+</body>
+
+</html>
